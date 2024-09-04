@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 10px 5%;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('photos/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headerup {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+.navu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+
+}
+
+li {
+    list-style: none;
+}
+
+.ok {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.ok::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(205, 50, 50);
+    transition: width 0.3s ease;
+
+}
+
+.ok:hover::after {
+    width: 50%;
+
+}
+
+.ok:hover {
+    color: #ddd;
+
+}
+
+.maintxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Align content in the center */
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+
+
+}
+
+
+
+.hi {
+    font-size: 3.0rem;
+    font-weight: bolder;
+
+
+}
+
+span {
+    color: red;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+
+
+}
+
+
+.column1 img {
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 10px;
+
+
+}
+
+.aboutme {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.loren {
+    font-size: 1.2rem;
+    color: #dddddda4;
+}
+
+.aboutnav {
+    display: flex;
+
+
+}
+
+.ul {
+    display: flex;
+    padding: 20px;
+}
+
+.skill {
+    padding: 10px;
+    color: #ddddddd2;
+    position: relative;
+    cursor: pointer;
+}
+
+.skill::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(205, 50, 50);
+    transition: width 0.3s ease;
+}
+
+.skill:hover::after {
+    width: 50%;
+}
+
+.skill:hover {
+    color: #ddd;
+
+}
+
+
+
+.main {
+    color: rgb(205, 50, 50);
+    margin-bottom: 3px;
+
+}
+
+.pw {
+    margin-bottom: 20px;
+    color: #ddddddde;
+}
+
+#skills {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#skills2,
+#skills3 {
+    display: none;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+#services {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 90%;
+    margin-left: 50px;
+}
+
+.blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease-in ;
+
+}
+
+.blocks :hover{
+  background: #ff004f;
+  
+}
+
+.block1 {
+    height: 400px;
+    width: 600px;
+    background-color: #dddddd15;
+    margin-right: 30px;
+    border-radius: 7px;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+.img {
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+h3 {
+    margin: 30px 20px;
+    font-size: 1.5rem;
+}
+
+.block1 .loren,
+.block2 .loren,
+.block3 .loren {
+    margin-bottom: 20px;
+}
+
+.block2 {
+    background-color: #dddddd15;
+    height: 400px;
+    width: 600px;
+    margin-right: 30px;
+    border-radius: 7px;
+}
+
+.block3 {
+    height: 400px;
+    width: 600px;
+    background-color: #dddddd15;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+
+.sides{
+    display: flex;
+    justify-content: space-around;
+    height: 63vh;
+    align-items: center;
+
+}
+
+.left h2{
+   font-size: 2.5rem;
+   margin-bottom: 20px;
+}
+
+.left p{
+    margin-bottom: 20px;
+    color: #ddddddd2;
+}
+
+.icons{
+    margin-top: 10px;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+
+
+
+.inputs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+   
+    
+}
+
+input{
+    background-color: black;
+    border: none;
+    outline: none;          
+    color: white;   
+    margin-bottom: 20px; 
+    height: 40px;
+    width: 800px;  
+    font-size: 1.2rem;  
+    padding-left: 20px;
+}
+
+.message{
+    height: 200px;
+    padding-top: 20px;
+    width: 800px; 
+    box-sizing: border-box;
+}
+
+button {               
+    padding: 15px;             
+    font-size: 18px;           
+    background-color: #333;    
+    color: white;              
+    border: none;              
+    border-radius: 5px;        
+    cursor: pointer;           
+    margin-left: 20px;
+   
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    height: 10vh;
+    background-color: #555;
+}
+.footer p{
+text-align: center;
+}
